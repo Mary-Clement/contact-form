@@ -1,0 +1,154 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #F1F7EE;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.contact-container {
+  background-color: #FFFFFF;
+  padding: 20px 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+}
+
+h1 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.input-group {
+  margin-bottom: 24px;
+}
+
+.name-group,
+.radio-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; 
+}
+
+.input-half {
+  width: 48%;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+  
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.radio-group{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.radio-input-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; 
+}
+
+.radio-input {
+  display: flex;
+  align-items: center;
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 48%;
+  box-sizing: border-box;
+}
+
+.radio-input input[type="radio"] {
+  margin-right: 16px;
+}
+
+.checkbox-group label {
+  display: flex;
+  align-items: center;
+  font-weight: normal;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007B55;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #00573D;
+}
+
+.error-message {
+  color: red;
+  font-size: 10px;
+  display: none;
+}
+
+.success-message {
+  color: green;
+  font-size: 1rem;
+  display: none;
+  text-align: center;
+  margin-top: 10px;
+}
+
+
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 1.25rem;
+  }
+
+  .input-half,
+  .radio-input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    font-size: 10px;
+  }
+
+  button {
+    font-size: 10px;
+  }
+}
